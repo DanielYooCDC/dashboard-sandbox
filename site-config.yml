@@ -1,6 +1,3 @@
 ---
 hub: "DanielYooCDC/Hub-Sandbox/"
 title: "MicoHub Workshop Hub Dashboard"
-pages:
-  - "about.md"
-  - "data.qmd"
