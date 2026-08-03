@@ -1,7 +1,6 @@
 ---
-hub: "hubverse-org/dashboard-test-hub/"
-title: "Dashboard Test Hub"
+hub: "DanielYooCDC/Hub-Sandbox/"
+title: "MicoHub Workshop Hub Dashboard"
 pages:
   - "about.md"
   - "data.qmd"
-

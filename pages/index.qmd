@@ -2,6 +2,7 @@
 title: "Introduction"
 ---
 
+This is a dashboard for the [MicroHub workshop](https://github.com/cdcepi/FluSight-forecast-hub/) that is organized by Northern Arizona University and the US CDC.
 
 ::: {style='display:flex; align-items: center; justify-content: center'}
 
@@ -9,17 +10,11 @@ title: "Introduction"
 
 :::
 
+The target data for for this workshop we used is SARI case counts as reported to FluID (FluID); this data is publicly available through the WHO's [Global Influenza Programme](https://www.who.int/teams/global-influenza-programme/surveillance-and-monitoring/influenza-surveillance-outputs).
 
-This Dashboard is build with Quarto. 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
 
-Authors can use $\LaTeX$ to write equations and even put in callouts:
-
-:::{.callout-note}
-
-Look at this note!
-
-:::
+This Dashboard is build with Hubverse `HubDashboard` packages. 
+To learn more about Hubverse ecosystem visit <https://hubverse.io/>.
 
 
 
