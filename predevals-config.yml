@@ -7,12 +7,6 @@ transform_defaults:
   label: log
 targets:
 - target_id: SARI
-  transform:
-    fun: log_shift
-    label: log
-    args:
-      offset: 1
-    append: true
   metrics:
   - wis
   - ae_median
@@ -21,18 +15,19 @@ targets:
   relative_metrics:
   - wis
   - ae_median
-  baseline: Regular Baseline
+  baseline: MicroHub-Regular_Baseline
   disaggregate_by:
   - age_group
   - reference_date
   - horizon
   - target_end_date
 eval_sets:
-- eval_set_name: 2026 season, Overall age group
+- eval_set_name: 2026 season, Overall
   task_filters:
     age_group:
     - "Overall"
     horizon:
+    - -5
     - -4
     - -3
     - -2
@@ -42,7 +37,117 @@ eval_sets:
     - 2
     - 3
     reference_date:
-    - "2026-10-22"
-    - "2026-11-19"
-    - "2026-12-17"
-    - "2026-01-14"
+    - "2026-05-30"
+    - "2026-06-06"
+    - "2026-06-13"
+    - "2026-06-20"
+    - "2026-06-27"
+- eval_set_name: 2026 season, Adults
+  task_filters:
+    age_group:
+    - "Adults"
+    horizon:
+    - -5
+    - -4
+    - -3
+    - -2
+    - -1
+    - 0
+    - 1
+    - 2
+    - 3
+    reference_date:
+    - "2026-05-30"
+    - "2026-06-06"
+    - "2026-06-13"
+    - "2026-06-20"
+    - "2026-06-27"
+- eval_set_name: 2026 season, Pediatrics
+  task_filters:
+    age_group:
+    - "Pediatrics"
+    horizon:
+    - -5
+    - -4
+    - -3
+    - -2
+    - -1
+    - 0
+    - 1
+    - 2
+    - 3
+    reference_date:
+    - "2026-05-30"
+    - "2026-06-06"
+    - "2026-06-13"
+    - "2026-06-20"
+    - "2026-06-27"
+- eval_set_name: Last 2 weeks, Overall
+  round_filters:
+    min: '2026-05-30'
+    n_last: 3
+  task_filters:
+    age_group:
+    - "Overall"
+    horizon:
+    - -5
+    - -4
+    - -3
+    - -2
+    - -1
+    - 0
+    - 1
+    - 2
+    - 3
+    reference_date:
+    - "2026-05-30"
+    - "2026-06-06"
+    - "2026-06-13"
+    - "2026-06-20"
+    - "2026-06-27"
+- eval_set_name: Last 2 weeks, Adults
+  round_filters:
+    min: '2026-05-30'
+    n_last: 3
+  task_filters:
+    age_group:
+    - "Adults"
+    horizon:
+    - -5
+    - -4
+    - -3
+    - -2
+    - -1
+    - 0
+    - 1
+    - 2
+    - 3
+    reference_date:
+    - "2026-05-30"
+    - "2026-06-06"
+    - "2026-06-13"
+    - "2026-06-20"
+    - "2026-06-27"
+- eval_set_name: Last 2 weeks, Pediatrics
+  round_filters:
+    min: '2026-05-30'
+    n_last: 3
+  task_filters:
+    age_group:
+    - "Pediatrics"
+    horizon:
+    - -5
+    - -4
+    - -3
+    - -2
+    - -1
+    - 0
+    - 1
+    - 2
+    - 3
+    reference_date:
+    - "2026-05-30"
+    - "2026-06-06"
+    - "2026-06-13"
+    - "2026-06-20"
+    - "2026-06-27"
