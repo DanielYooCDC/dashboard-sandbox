@@ -60,13 +60,13 @@
         "MicroHub-Regular_Baseline"
     ],
     "model_urls": {
-        "MicroHub-Ensemble": "https://github.com/hubverse-org/hubTemplate/blob/main/model-metadata/MicroHub-Ensemble.yml",
         "MicroHub-Opt_Baseline": "https://github.com/hubverse-org/hubTemplate/blob/main/model-metadata/MicroHub-Opt_Baseline.yml",
-        "MicroHub-INFLAenza": "https://github.com/hubverse-org/hubTemplate/blob/main/model-metadata/MicroHub-INFLAenza.yml",
         "MicroHub-Copycat": "https://github.com/hubverse-org/hubTemplate/blob/main/model-metadata/MicroHub-Copycat.yml",
         "MicroHub-Regular_Baseline": "https://github.com/hubverse-org/hubTemplate/blob/main/model-metadata/MicroHub-Regular_Baseline.yml",
+        "MicroHub-Ensemble": "https://github.com/hubverse-org/hubTemplate/blob/main/model-metadata/MicroHub-Ensemble.yml",
         "MicroHub-Seasonal_Baseline": "https://github.com/hubverse-org/hubTemplate/blob/main/model-metadata/MicroHub-Seasonal_Baseline.yml",
-        "MicroHub-newGBQR": "https://github.com/hubverse-org/hubTemplate/blob/main/model-metadata/MicroHub-newGBQR.yml"
+        "MicroHub-newGBQR": "https://github.com/hubverse-org/hubTemplate/blob/main/model-metadata/MicroHub-newGBQR.yml",
+        "MicroHub-INFLAenza": "https://github.com/hubverse-org/hubTemplate/blob/main/model-metadata/MicroHub-INFLAenza.yml"
     },
     "initial_xaxis_range": [
         "2026-02-01",
